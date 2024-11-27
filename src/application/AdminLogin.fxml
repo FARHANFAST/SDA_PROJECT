@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminLoginController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="111.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="175.0" layoutY="47.0" text="             HOTEL CHAIN MANAGEMENT SYSTEM" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="35.0" layoutY="154.0" text="Email" />
+      <Label layoutX="35.0" layoutY="192.0" text="Password" />
+      <TextField fx:id="Adminlogin_emailTextField" layoutX="102.0" layoutY="150.0" />
+      <TextField fx:id="Adminlogin_passTextField" layoutX="102.0" layoutY="188.0" />
+      <Button fx:id="Adminloginbtn" layoutX="34.0" layoutY="241.0" mnemonicParsing="false" onAction="#Adminloginbtn_Clicked" text="Login" />
+      <Button fx:id="AdminBackbtn" layoutX="24.0" layoutY="334.0" mnemonicParsing="false" onAction="#AdminBackbtn_Clicked" text="Back" />
+      <Text fill="RED" layoutX="300.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Does Not Have An Account?" />
+      <Button fx:id="AdminSignUpbtn" layoutX="464.0" layoutY="334.0" mnemonicParsing="false" onAction="#AdminSignUpbtn_Clicked" text="Sign Up" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="375.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Admin.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="433.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" />
+   </children>
+</AnchorPane>

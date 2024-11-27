@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminAddHotelsController">
+   <children>
+      <AnchorPane prefHeight="111.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="204.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Chain Management System" />
+            <Text layoutX="235.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Hotel Branch" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="24.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="24.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+      <Text layoutX="24.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number" />
+      <Text layoutX="24.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Name" />
+      <Text layoutX="20.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operational Status" />
+      <TextField fx:id="Admin_HotelNametxtfield" layoutX="162.0" layoutY="125.0" promptText="New Hotel Name" />
+      <TextField fx:id="Admin_Hotellocationtxtfield" layoutX="162.0" layoutY="155.0" promptText="New Hotel location" />
+      <TextField fx:id="Admin_HotelContacttxtfield" layoutX="162.0" layoutY="188.0" promptText="New Hotel Contact No." />
+      <TextField fx:id="Admin_HotelManagertxtfield" layoutX="162.0" layoutY="224.0" promptText="New Hotel Manager Name" />
+      <CheckBox fx:id="AdminOperationalselectfield" layoutX="156.0" layoutY="267.0" mnemonicParsing="false" text="Operational" />
+      <CheckBox fx:id="Adminoutorderselectfield" layoutX="249.0" layoutY="267.0" mnemonicParsing="false" text="Out Of Order" />
+      <Button fx:id="AdminAddHotelRegisterbtn" layoutX="215.0" layoutY="305.0" mnemonicParsing="false" onAction="#AdminAddHotelRegisterbtn_Clicked" text="Register" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="370.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../NewHotel.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="AdminAddHotel_backbtn" layoutX="30.0" layoutY="344.0" mnemonicParsing="false" onAction="#AdminAddHotel_backbtn_Clicked" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminRemoveHotels">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="7.0" prefHeight="79.0" prefWidth="594.0">
+         <children>
+            <Text layoutX="208.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Chain Management System" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="448.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Remove Hotels" />
+      <Text fill="RED" layoutX="40.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Name" />
+      <TextField fx:id="AdminRemoveHotels_HotelNametxtfield" layoutX="196.0" layoutY="156.0" />
+      <Text fill="RED" layoutX="40.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Admin Password" />
+      <TextField fx:id="AdminRemoveHotels_Adminconfirmpassword_txtfield" layoutX="196.0" layoutY="188.0" />
+      <Button fx:id="AdminRemoveHotels_Removebtn" layoutX="245.0" layoutY="242.0" mnemonicParsing="false" onAction="#AdminRemoveHotels_Removebtn_Clicked" text="Remove Hotel" />
+      <Button fx:id="AdminRemoveHotels_Backbtn" layoutX="40.0" layoutY="334.0" mnemonicParsing="false" onAction="#AdminRemoveHotels_Backbtn_Clicked" text="Back" />
+   </children>
+</AnchorPane>

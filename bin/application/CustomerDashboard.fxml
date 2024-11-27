@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerDashboardController">
+   <children>
+      <Text layoutX="219.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer DashBoard" />
+      <AnchorPane layoutY="7.0" prefHeight="111.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="211.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Chain Management System" />
+            <ImageView fitHeight="127.0" fitWidth="413.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../RoomBooking.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="RED" layoutX="7.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select Room Category and Number" />
+      <CheckBox fx:id="SingleRoomCheckbx" layoutX="7.0" layoutY="155.0" mnemonicParsing="false" text="Single Room" />
+      <CheckBox fx:id="DeluxRoomCheckbx" layoutX="8.0" layoutY="229.0" mnemonicParsing="false" text="Delux Room" />
+      <CheckBox fx:id="DoubleRoomCheckbx" layoutX="8.0" layoutY="191.0" mnemonicParsing="false" text="Double Room" />
+      <CheckBox fx:id="SuitRoomCheckbx" layoutX="8.0" layoutY="264.0" mnemonicParsing="false" text="Suit" />
+      <TextField fx:id="SingleRoom_Quantity" layoutX="144.0" layoutY="151.0" promptText="eg; 1,2,3,4" />
+      <TextField fx:id="DoubleRoom_Quantity" layoutX="144.0" layoutY="187.0" promptText="eg; 1,2,3,4" />
+      <TextField fx:id="DeluxRoom_Quantity" layoutX="144.0" layoutY="225.0" promptText="eg; 1,2,3,4" />
+      <TextField fx:id="SuitRoom_Quantity" layoutX="144.0" layoutY="260.0" promptText="eg; 1,2,3,4" />
+      <Button fx:id="Customer_RoomBookbtn" layoutX="253.0" layoutY="316.0" mnemonicParsing="false" onAction="#Customer_RoomBookbtn_Clicked" text="Book" />
+      <Button fx:id="CustomerRoomBookingBackbtn" layoutX="25.0" layoutY="329.0" mnemonicParsing="false" onAction="#CustomerRoomBookingBackbtn_Clicked" text="Back" />
+      <Text fill="RED" layoutX="367.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel Booking?" />
+      <Button fx:id="CustomerDashboard_CancelBookingbtn" layoutX="477.0" layoutY="328.0" mnemonicParsing="false" onAction="#CustomerDashboard_CancelBookingbtn_Clicked" text="Cancel Booking" />
+      <Text fill="RED" layoutX="320.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Days?" />
+      <TextField fx:id="SingleRoom_Days" layoutX="313.0" layoutY="151.0" prefHeight="25.0" prefWidth="43.0" promptText="1" />
+      <TextField fx:id="DoubleRoom_Days" layoutX="313.0" layoutY="187.0" prefHeight="25.0" prefWidth="43.0" promptText="2" />
+      <TextField fx:id="DeluxRoom_Days" layoutX="313.0" layoutY="225.0" prefHeight="25.0" prefWidth="43.0" promptText="3" />
+      <TextField fx:id="SuitRoom_Days" layoutX="313.0" layoutY="260.0" prefHeight="25.0" prefWidth="43.0" promptText="4" />
+      <Text fill="RED" layoutX="433.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loction?" />
+      <ComboBox fx:id="SingleRoom_LocationCombo" layoutX="392.0" layoutY="151.0" prefWidth="150.0" />
+      <ComboBox fx:id="DoubleRoom_LocationCombo" layoutX="392.0" layoutY="187.0" prefWidth="150.0" />
+      <ComboBox fx:id="DeluxRoom_LocationCombo" layoutX="392.0" layoutY="225.0" prefWidth="150.0" />
+      <ComboBox fx:id="SuitRoom_LocationCombo" layoutX="392.0" layoutY="260.0" prefWidth="150.0" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminDashboardController">
+   <children>
+      <Text layoutX="237.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Dashboard" />
+      <Button fx:id="AdminDashboardbackbtn" layoutX="41.0" layoutY="313.0" mnemonicParsing="false" onAction="#AdminDashboardbackbtn_Clicked" text="Back" />
+      <Text layoutX="206.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Chain Management Systemxt" />
+      <Button fx:id="Admin_AddHotelBranchbtn" layoutX="187.0" layoutY="120.0" mnemonicParsing="false" onAction="#Admin_AddHotelBranchbtn_Clicked" text="Add" />
+      <Text fill="RED" layoutX="14.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Hotel Branch?" />
+      <Text fill="RED" layoutX="12.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Hotel Branch?" />
+      <Button fx:id="Admin_RemoveHotelBranchbtn" layoutX="184.0" layoutY="166.0" mnemonicParsing="false" onAction="#Admin_RemoveHotelBranchbtn_Clicked" text="Remove" />
+      <Text fill="RED" layoutX="12.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation/booking Requests?" />
+      <Button fx:id="Admin_HandelRequestbtn" layoutX="187.0" layoutY="223.0" mnemonicParsing="false" onAction="#Admin_HandelRequestbtn_Clicked" text="Handel" />
+      <Text fill="RED" layoutX="300.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Reports ?" />
+      <Button fx:id="Admin_GenerateReportbtn" layoutX="443.0" layoutY="120.0" mnemonicParsing="false" onAction="#Admin_GenerateReportbtn_Clicked" text="Generate Reports" />
+   </children>
+</AnchorPane>

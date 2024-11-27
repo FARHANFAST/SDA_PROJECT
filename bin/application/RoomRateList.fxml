@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RoomRateListController">
+   <children>
+      <Text layoutX="196.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Chain Management System" />
+      <Text fill="RED" layoutX="46.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms Type" />
+      <Text fill="RED" layoutX="213.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pricing" />
+      <Text layoutX="46.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single Room" />
+      <Text layoutX="45.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double Room" />
+      <Text layoutX="48.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delux Room" />
+      <Text layoutX="48.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suit" />
+      <Text layoutX="213.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2,000 PKR / Day" />
+      <Text layoutX="213.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4,000 PKR / Day" />
+      <Text layoutX="213.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6,000 PKR / Day" />
+      <Text layoutX="213.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10,000 PKR / Day" />
+      <Button fx:id="RoomPricingListBackbtn" layoutX="22.0" layoutY="347.0" mnemonicParsing="false" onAction="#RoomPricingListBackbtn_Clicked" text="Back" />
+      <Button fx:id="RoomPricingListNextbtn" layoutX="502.0" layoutY="347.0" mnemonicParsing="false" onAction="#RoomPricingListNextbtn_Clicked" text="Next" />
+   </children>
+</AnchorPane>
